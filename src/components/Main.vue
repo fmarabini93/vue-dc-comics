@@ -8,11 +8,11 @@
         <div id="main-center" class="bar">
             <div class="container">
                 <ul>
-                    <li><img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">Digital Comics</li>
-                    <li><img src="../assets/img/buy-comics-merchandise.png" alt="DC Merchandise">DC Merchandise</li>
-                    <li><img src="../assets/img/buy-comics-subscriptions.png" alt="Subscription">Subscription</li>
-                    <li><img src="../assets/img/buy-comics-shop-locator.png" alt="Comics Shop Locator">Comic Shop Locator</li>
-                    <li><img src="../assets/img/buy-dc-power-visa.svg" alt="DC Power Visa">DC Power Visa</li>
+                    <li class="uppercase"><img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">Digital Comics</li>
+                    <li class="uppercase"><img src="../assets/img/buy-comics-merchandise.png" alt="DC Merchandise">DC Merchandise</li>
+                    <li class="uppercase"><img src="../assets/img/buy-comics-subscriptions.png" alt="Subscription">Subscription</li>
+                    <li class="uppercase"><img src="../assets/img/buy-comics-shop-locator.png" alt="Comics Shop Locator">Comic Shop Locator</li>
+                    <li class="uppercase"><img src="../assets/img/buy-dc-power-visa.svg" alt="DC Power Visa">DC Power Visa</li>
                 </ul>
             </div>
         </div>
@@ -20,25 +20,25 @@
             <div class="container">
                 <div id="lists" class="clearfix">
                     <div class="float">
-                        <h3>DC Comics</h3>
+                        <h3 class="uppercase">DC Comics</h3>
                         <ul>
-                            <li v-for="comic,index in comics" :key="index">{{comic}}</li>
+                            <li v-for="comic,index in comics" :key="index" class="not-uc">{{comic}}</li>
                         </ul>
-                        <h3>Shop</h3>
+                        <h3 class="uppercase">Shop</h3>
                         <ul>
-                            <li v-for="shop,index in shops" :key="index">{{shop}}</li>
+                            <li v-for="shop,index in shops" :key="index" class="not-uc">{{shop}}</li>
                         </ul>
                     </div>
                     <div class="float">
                         <h3>DC</h3>
                         <ul>
-                            <li v-for="dc,index in dcs" :key="index">{{dc}}</li>
+                            <li v-for="dc,index in dcs" :key="index" class="not-uc">{{dc}}</li>
                         </ul>
                     </div>
                     <div class="float">
-                        <h3>Sites</h3>
+                        <h3 class="uppercase">Sites</h3>
                         <ul>
-                            <li v-for="site,index in sites" :key="index">{{site}}</li>
+                            <li v-for="site,index in sites" :key="index" class="not-uc">{{site}}</li>
                         </ul>  
                     </div>
                 </div>
@@ -117,6 +117,12 @@ export default {
 
                 ul {
                     list-style: none;
+
+                    li {
+                        padding: 3px 0;
+                        font-size: 14px;
+                        color: #959595;
+                    }
                 }
 
                 h3 {

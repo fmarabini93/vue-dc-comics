@@ -6,7 +6,7 @@
             </div>
             <div>
                 <ul>
-                    <li :key="index" v-for="link,index in links">{{link}}</li>
+                    <li :key="index" v-for="link,index in links" class="uppercase">{{link}}</li>
                 </ul>
             </div>
         </div>
@@ -42,6 +42,10 @@ export default {
             display: flex;
             justify-content: space-between;
             list-style: none;
+
+            li {
+                font-size: 14px;
+            }
         }
     }
 </style>

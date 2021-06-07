@@ -49,4 +49,8 @@ export default {
   display: table;
   clear: both;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
 </style>
