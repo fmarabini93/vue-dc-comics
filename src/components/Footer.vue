@@ -31,8 +31,9 @@
             align-items: center;
 
             button {
-                padding: 10px;
+                padding: 15px;
                 border: 2px solid #0282f9;
+                font-size: 18px;
                 font-weight: bold;
                 color: white;
                 background-color: #303030;

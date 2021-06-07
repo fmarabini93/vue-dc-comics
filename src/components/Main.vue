@@ -51,16 +51,16 @@
 </template>
 
 <script>
-export default {
-    data: function () {
-        return {
-            comics: ["Characters","Comics","Movies","TV","Games","Videos","News"],
-            shops: ["Shop DC","Shop DC Collectibles"],
-            dcs: ["Terms of Use","Privacy Policy (New)","Ad Choices","Advertising","Jobs","Subscriptions","Talent Workshops","CPSC Certificates","Ratings","Shop Help","Contact Us"],
-            sites: ["DC","Mad Magazine","DC Kids","DC Universe","DC Power Visa"]
+    export default {
+        data: function () {
+            return {
+                comics: ["Characters","Comics","Movies","TV","Games","Videos","News"],
+                shops: ["Shop DC","Shop DC Collectibles"],
+                dcs: ["Terms of Use","Privacy Policy (New)","Ad Choices","Advertising","Jobs","Subscriptions","Talent Workshops","CPSC Certificates","Ratings","Shop Help","Contact Us"],
+                sites: ["DC","Mad Magazine","DC Kids","DC Universe","DC Power Visa"]
+            }
         }
     }
-}
 </script>
 
 <style lang="scss" scoped>

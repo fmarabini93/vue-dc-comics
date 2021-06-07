@@ -14,13 +14,13 @@
 </template>
 
 <script>
-export default {
-    data: function() {
-        return {
-            links: ["Characters","Comics","Movies","TV","Games","Collectibles","Videos","Fans","News","Shop"]
+    export default {
+        data: function() {
+            return {
+                links: ["Characters","Comics","Movies","TV","Games","Collectibles","Videos","Fans","News","Shop"]
+            }
         }
     }
-}
 </script>
 
 
@@ -45,6 +45,7 @@ export default {
 
             li {
                 font-size: 14px;
+                font-weight: bold;
             }
         }
     }
