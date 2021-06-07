@@ -40,4 +40,13 @@ export default {
 .bar {
   height: 150px;
 }
+
+.float {
+  float: left;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 </style>

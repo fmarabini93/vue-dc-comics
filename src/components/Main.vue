@@ -18,8 +18,29 @@
         </div>
         <div id="main-bottom">
             <div class="container">
-                <div>
-
+                <div id="lists" class="clearfix">
+                    <div class="float">
+                        <h3>DC Comics</h3>
+                        <ul>
+                            <li v-for="comic,index in comics" :key="index">{{comic}}</li>
+                        </ul>
+                        <h3>Shop</h3>
+                        <ul>
+                            <li v-for="shop,index in shops" :key="index">{{shop}}</li>
+                        </ul>
+                    </div>
+                    <div class="float">
+                        <h3>DC</h3>
+                        <ul>
+                            <li v-for="dc,index in dcs" :key="index">{{dc}}</li>
+                        </ul>
+                    </div>
+                    <div class="float">
+                        <h3>Sites</h3>
+                        <ul>
+                            <li v-for="site,index in sites" :key="index">{{site}}</li>
+                        </ul>  
+                    </div>
                 </div>
                 <div>
                     <img src="../assets/img/dc-logo-bg.png" alt="DC Background Logo">
@@ -28,6 +49,19 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data: function () {
+        return {
+            comics: ["Characters","Comics","Movies","TV","Games","Videos","News"],
+            shops: ["Shop DC","Shop DC Collectibles"],
+            dcs: ["Terms of Use","Privacy Policy (New)","Ad Choices","Advertising","Jobs","Subscriptions","Talent Workshops","CPSC Certificates","Ratings","Shop Help","Contact Us"],
+            sites: ["DC","Mad Magazine","DC Kids","DC Universe","DC Power Visa"]
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
     #main-top {
@@ -64,16 +98,30 @@
 
     #main-bottom {
         height: 375px;
+        display: flex;
+        align-items: center;
         overflow: hidden;
+        color: white;
         background-image: url(../assets/img/footer-bg.jpg);
 
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
 
-            img {
-                margin-top: -95px;
+        #lists {
+
+            .float {
+                padding-right: 40px;
+
+                ul {
+                    list-style: none;
+                }
+
+                h3 {
+                    padding: 15px 0;
+                }
             }
         }
     }
