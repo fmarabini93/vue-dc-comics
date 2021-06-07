@@ -46,6 +46,10 @@
             li {
                 font-size: 14px;
                 font-weight: bold;
+
+                &:nth-child(2) {
+                    color: #0282f9;
+                }
             }
         }
     }

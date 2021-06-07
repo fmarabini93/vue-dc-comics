@@ -87,11 +87,12 @@
                 width: 20%;
                 display: flex;
                 align-items: center;
+                font-size: 14px;
             }
         }
 
         img {
-            height: 60px;
+            height: 50px;
             padding-right: 20px;
         }
     }
