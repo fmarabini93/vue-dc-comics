@@ -46,6 +46,7 @@
             li {
                 font-size: 14px;
                 font-weight: bold;
+                color: #303030;
 
                 &:nth-child(2) {
                     color: #0282f9;
