@@ -3,7 +3,9 @@
         <div id="main-top">
             <div id="jumbotron"></div>
             <div class="container">
+                <button>Current Series</button>
                 <div v-for="poster,index in posters" :key="index" class="card"><img :src=poster.thumb alt="#"><h3>{{poster.series}}</h3></div>
+                <button class="btm-button">Load More</button>
             </div>
         </div>
         <div id="main-center" class="bar">
@@ -148,6 +150,30 @@
             display:flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            position: relative;
+
+            button {
+                padding: 5px 20px;
+                border: none;
+                color: white;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #0c7cec;
+            }
+
+            button:not(.btm-button) {
+                position: absolute;
+                top: -15px;
+            }
+
+            .btm-button {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 20px;
+                padding: 10px 40px;
+            }
 
             .card {
                 width: calc(100% / 6);
