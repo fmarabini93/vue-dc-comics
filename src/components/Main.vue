@@ -4,7 +4,7 @@
             <div id="jumbotron"></div>
             <div class="container">
                 <button>Current Series</button>
-                <div v-for="poster,index in posters" :key="index" class="card"><img :src=poster.thumb alt="#"><h3>{{poster.series}}</h3></div>
+                <div v-for="poster,index in posters" :key="index" class="card"><div class="img-container"><img :src=poster.thumb alt="#"></div><h3>{{poster.series}}</h3></div>
                 <button class="btm-button">Load More</button>
             </div>
         </div>
@@ -153,7 +153,7 @@
             position: relative;
 
             button {
-                padding: 5px 20px;
+                padding: 10px 20px;
                 border: none;
                 color: white;
                 text-transform: uppercase;
@@ -164,7 +164,7 @@
 
             button:not(.btm-button) {
                 position: absolute;
-                top: -15px;
+                top: -20px;
             }
 
             .btm-button {
@@ -180,6 +180,11 @@
                 padding: 50px 0;
                 line-height: 20px;
                 font-size: 14px;
+
+                .img-container {
+                    height: 220px;
+                    overflow: hidden;
+                }
 
                 h3 {
                     padding-top: 20px;
